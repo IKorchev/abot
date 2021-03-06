@@ -53,7 +53,7 @@ const buyGoods = async (amount) => {
     await mouse.move(straightTo(centerOf(image2)))
     await mouse.leftClick()
     await keyboard.type(amount.toString())
-    await keyboard.type(Key.Enter)
+    await keyboard.type(Key.Enter) 
   } catch (err) {
     /* prettier-ignore */
     const image2 = await screen.waitFor(`./images/tradegoods/goods9.jpg`, 4000)
